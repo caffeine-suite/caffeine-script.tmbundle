@@ -1,0 +1,5 @@
+import &ArtStandardLib
+json = &CaffeineScriptTmLanguage
+plist = &plist.build json
+log {} json, plist
+&fs.writeFileSync "Syntaxes/CaffeineScript.tmLanguage", plist
