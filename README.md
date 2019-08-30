@@ -1,10 +1,12 @@
-CoffeeScript.tmbundle
----------------------
+# CaffeineScript.tmbundle
 
-A **TextMate Bundle** for the **CoffeeScript** programming language.
+A **TextMate Bundle** for the **CaffeineScript** programming language.
 
-Installation:
--------------
+# WIP - by Shane
+
+I'm working to conviert the CoffeeScript tmBundle to support CaffeineScript. I've only just begun...
+
+# Installation
 
 **TextMate 2:** You can install this bundle in TextMate by opening the preferences and going to the bundles tab. After installation it will be automatically updated for you.
 
