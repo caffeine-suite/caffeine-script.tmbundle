@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>CoffeeScript</string>
+	<string>CaffeineScript</string>
 	<key>fileTypes</key>
 	<array>
 		<string>caf</string>
@@ -29,7 +29,7 @@
 	<key>keyEquivalent</key>
 	<string>^~C</string>
 	<key>name</key>
-	<string>CoffeeScript</string>
+	<string>CaffeineScript</string>
 	<key>patterns</key>
 	<array>
 		<dict>
