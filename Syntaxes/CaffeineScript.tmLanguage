@@ -11,13 +11,13 @@
     </array>
     <key>injections</key>
     <dict>
-      <key>string.regexp.block.coffee</key>
+      <key>string.regexp.block.caffeine</key>
       <dict>
         <key>patterns</key>
         <array>
           <dict>
             <key>include</key>
-            <string>#interpolated_coffee</string>
+            <string>#interpolated_caffeine</string>
           </dict>
           <dict>
             <key>include</key>
@@ -38,7 +38,7 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.parameters.begin.coffee</string>
+            <string>punctuation.definition.parameters.begin.caffeine</string>
           </dict>
           <key>2</key>
           <dict>
@@ -50,42 +50,42 @@
                   <key>1</key>
                   <dict>
                     <key>name</key>
-                    <string>variable.parameter.function.coffee</string>
+                    <string>variable.parameter.function.caffeine</string>
                   </dict>
                   <key>2</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.separator.key-value.coffee</string>
+                    <string>punctuation.separator.key-value.caffeine</string>
                   </dict>
                   <key>3</key>
                   <dict>
                     <key>name</key>
-                    <string>string.quoted.double.coffee</string>
+                    <string>string.quoted.double.caffeine</string>
                   </dict>
                   <key>4</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.begin.coffee</string>
+                    <string>punctuation.definition.string.begin.caffeine</string>
                   </dict>
                   <key>5</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.end.coffee</string>
+                    <string>punctuation.definition.string.end.caffeine</string>
                   </dict>
                   <key>6</key>
                   <dict>
                     <key>name</key>
-                    <string>string.quoted.single.coffee</string>
+                    <string>string.quoted.single.caffeine</string>
                   </dict>
                   <key>7</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.begin.coffee</string>
+                    <string>punctuation.definition.string.begin.caffeine</string>
                   </dict>
                   <key>8</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.end.coffee</string>
+                    <string>punctuation.definition.string.end.caffeine</string>
                   </dict>
                 </dict>
                 <key>match</key>
@@ -101,25 +101,25 @@
                 <key>match</key>
                 <string>[^()\s,]+</string>
                 <key>name</key>
-                <string>variable.parameter.function.coffee</string>
+                <string>variable.parameter.function.caffeine</string>
               </dict>
               <dict>
                 <key>match</key>
                 <string>,</string>
                 <key>name</key>
-                <string>punctuation.separator.arguments.coffee</string>
+                <string>punctuation.separator.arguments.caffeine</string>
               </dict>
             </array>
           </dict>
           <key>3</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.parameters.begin.coffee</string>
+            <string>punctuation.definition.parameters.begin.caffeine</string>
           </dict>
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>storage.type.function.coffee</string>
+            <string>storage.type.function.caffeine</string>
           </dict>
         </dict>
         <key>comment</key>
@@ -127,7 +127,7 @@
         <key>match</key>
         <string>(\()([^()]*?)(\))\s*([=-]&gt;)</string>
         <key>name</key>
-        <string>meta.inline.function.coffee</string>
+        <string>meta.inline.function.caffeine</string>
       </dict>
       <dict>
         <key>captures</key>
@@ -135,22 +135,22 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.new.coffee</string>
+            <string>keyword.operator.new.caffeine</string>
           </dict>
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>storage.type.class.coffee</string>
+            <string>storage.type.class.caffeine</string>
           </dict>
           <key>6</key>
           <dict>
             <key>name</key>
-            <string>entity.name.type.instance.coffee</string>
+            <string>entity.name.type.instance.caffeine</string>
           </dict>
           <key>7</key>
           <dict>
             <key>name</key>
-            <string>entity.name.type.instance.coffee</string>
+            <string>entity.name.type.instance.caffeine</string>
           </dict>
         </dict>
         <key>match</key>
@@ -166,7 +166,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.begin.coffee</string>
+            <string>punctuation.definition.string.begin.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -176,11 +176,11 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.end.coffee</string>
+            <string>punctuation.definition.string.end.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>string.unquoted.heredoc.coffee</string>
+        <string>string.unquoted.heredoc.caffeine</string>
       </dict>
       <dict>
         <key>begin</key>
@@ -190,7 +190,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.begin.coffee</string>
+            <string>punctuation.definition.string.begin.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -200,22 +200,22 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.end.coffee</string>
+            <string>punctuation.definition.string.end.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>string.quoted.double.heredoc.coffee</string>
+        <string>string.quoted.double.heredoc.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
             <key>match</key>
             <string>\.</string>
             <key>name</key>
-            <string>constant.character.escape.coffee</string>
+            <string>constant.character.escape.caffeine</string>
           </dict>
           <dict>
             <key>include</key>
-            <string>#interpolated_coffee</string>
+            <string>#interpolated_caffeine</string>
           </dict>
         </array>
       </dict>
@@ -225,7 +225,7 @@
         <key>end</key>
         <string>(?&lt;=`)</string>
         <key>name</key>
-        <string>meta.embedded.line.coffee</string>
+        <string>meta.embedded.line.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -236,7 +236,7 @@
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.begin.coffee</string>
+                <string>punctuation.definition.string.begin.caffeine</string>
               </dict>
             </dict>
             <key>contentName</key>
@@ -248,7 +248,7 @@
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.end.coffee</string>
+                <string>punctuation.definition.string.end.caffeine</string>
               </dict>
               <key>1</key>
               <dict>
@@ -257,7 +257,7 @@
               </dict>
             </dict>
             <key>name</key>
-            <string>string.other.embedded.javascript.coffee</string>
+            <string>string.other.embedded.javascript.caffeine</string>
             <key>patterns</key>
             <array>
               <dict>
@@ -276,20 +276,20 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.comment.coffee</string>
+            <string>punctuation.definition.comment.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
         <string>###(?:[   ]*\n)</string>
         <key>name</key>
-        <string>comment.block.coffee</string>
+        <string>comment.block.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
             <key>match</key>
             <string>(?&lt;=^|\s)@\w*(?=\s)</string>
             <key>name</key>
-            <string>storage.type.annotation.coffeescript</string>
+            <string>storage.type.annotation.caffeinescript</string>
           </dict>
         </array>
       </dict>
@@ -301,7 +301,7 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>punctuation.whitespace.comment.leading.coffee</string>
+            <string>punctuation.whitespace.comment.leading.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -316,14 +316,14 @@
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.comment.coffee</string>
+                <string>punctuation.definition.comment.caffeine</string>
               </dict>
             </dict>
             <key>end</key>
             <string>
 </string>
             <key>name</key>
-            <string>comment.line.number-sign.coffee</string>
+            <string>comment.line.number-sign.caffeine</string>
           </dict>
         </array>
       </dict>
@@ -335,7 +335,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.begin.coffee</string>
+            <string>punctuation.definition.string.begin.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -345,11 +345,11 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.end.coffee</string>
+            <string>punctuation.definition.string.end.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>string.regexp.block.coffee</string>
+        <string>string.regexp.block.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -366,7 +366,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.begin.coffee</string>
+            <string>punctuation.definition.string.begin.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -376,11 +376,11 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.string.end.coffee</string>
+            <string>punctuation.definition.string.end.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>string.regexp.coffee</string>
+        <string>string.regexp.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -421,7 +421,7 @@
 (?!\s*:)
 \b</string>
         <key>name</key>
-        <string>keyword.control.coffee</string>
+        <string>keyword.control.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -438,7 +438,7 @@
                 | \|\|?
                 | \b(?&lt;![\.\$])(instanceof|new|delete|typeof|and|or|is|isnt|not|super)(?!\s*:)\b</string>
         <key>name</key>
-        <string>keyword.operator.coffee</string>
+        <string>keyword.operator.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -475,7 +475,7 @@
 (?!\s*:)
 \b</string>
         <key>name</key>
-        <string>keyword.other.reserved.coffee</string>
+        <string>keyword.other.reserved.caffeine</string>
       </dict>
       <dict>
         <key>captures</key>
@@ -483,7 +483,7 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>variable.other.assignment.coffee</string>
+            <string>variable.other.assignment.caffeine</string>
           </dict>
           <key>4</key>
           <dict>
@@ -493,7 +493,7 @@
           <key>5</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.coffee</string>
+            <string>keyword.operator.caffeine</string>
           </dict>
         </dict>
         <key>match</key>
@@ -520,7 +520,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.coffee</string>
+            <string>keyword.operator.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -530,11 +530,11 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.coffee</string>
+            <string>keyword.operator.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>meta.variable.assignment.destructured.object.coffee</string>
+        <string>meta.variable.assignment.destructured.object.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -567,7 +567,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.coffee</string>
+            <string>keyword.operator.caffeine</string>
           </dict>
         </dict>
         <key>end</key>
@@ -577,11 +577,11 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.coffee</string>
+            <string>keyword.operator.caffeine</string>
           </dict>
         </dict>
         <key>name</key>
-        <string>meta.variable.assignment.destructured.array.coffee</string>
+        <string>meta.variable.assignment.destructured.array.caffeine</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -612,12 +612,12 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>entity.name.function.coffee</string>
+            <string>entity.name.function.caffeine</string>
           </dict>
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.parameters.begin.coffee</string>
+            <string>punctuation.definition.parameters.begin.caffeine</string>
           </dict>
           <key>5</key>
           <dict>
@@ -629,42 +629,42 @@
                   <key>1</key>
                   <dict>
                     <key>name</key>
-                    <string>variable.parameter.function.coffee</string>
+                    <string>variable.parameter.function.caffeine</string>
                   </dict>
                   <key>2</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.separator.key-value.coffee</string>
+                    <string>punctuation.separator.key-value.caffeine</string>
                   </dict>
                   <key>3</key>
                   <dict>
                     <key>name</key>
-                    <string>string.quoted.double.coffee</string>
+                    <string>string.quoted.double.caffeine</string>
                   </dict>
                   <key>4</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.begin.coffee</string>
+                    <string>punctuation.definition.string.begin.caffeine</string>
                   </dict>
                   <key>5</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.end.coffee</string>
+                    <string>punctuation.definition.string.end.caffeine</string>
                   </dict>
                   <key>6</key>
                   <dict>
                     <key>name</key>
-                    <string>string.quoted.single.coffee</string>
+                    <string>string.quoted.single.caffeine</string>
                   </dict>
                   <key>7</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.begin.coffee</string>
+                    <string>punctuation.definition.string.begin.caffeine</string>
                   </dict>
                   <key>8</key>
                   <dict>
                     <key>name</key>
-                    <string>punctuation.definition.string.end.coffee</string>
+                    <string>punctuation.definition.string.end.caffeine</string>
                   </dict>
                 </dict>
                 <key>match</key>
@@ -680,25 +680,25 @@
                 <key>match</key>
                 <string>[^()\s,]+</string>
                 <key>name</key>
-                <string>variable.parameter.function.coffee</string>
+                <string>variable.parameter.function.caffeine</string>
               </dict>
               <dict>
                 <key>match</key>
                 <string>,</string>
                 <key>name</key>
-                <string>punctuation.separator.arguments.coffee</string>
+                <string>punctuation.separator.arguments.caffeine</string>
               </dict>
             </array>
           </dict>
           <key>6</key>
           <dict>
             <key>name</key>
-            <string>punctuation.definition.parameters.begin.coffee</string>
+            <string>punctuation.definition.parameters.begin.caffeine</string>
           </dict>
           <key>7</key>
           <dict>
             <key>name</key>
-            <string>storage.type.function.coffee</string>
+            <string>storage.type.function.caffeine</string>
           </dict>
         </dict>
         <key>match</key>
@@ -716,7 +716,7 @@
   )
 )</string>
         <key>name</key>
-        <string>meta.function.coffee</string>
+        <string>meta.function.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -727,7 +727,7 @@
 (?!\s*[:=][^=])
 \b</string>
         <key>name</key>
-        <string>constant.language.boolean.true.coffee</string>
+        <string>constant.language.boolean.true.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -738,19 +738,19 @@
 (?!\s*[:=][^=])
 \b</string>
         <key>name</key>
-        <string>constant.language.boolean.false.coffee</string>
+        <string>constant.language.boolean.false.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>@?\b(?!class|subclass|extends|decodeURI(Component)?|encodeURI(Component)?|eval|parse(Float|Int)|require)\w+(?=\s+(?!(of|in|then|is|isnt|and|or|for|else|when|not|if)\s)(?=(@?\w+|\-&gt;|\-\d|\[|\{|"|'))|(?=\())</string>
         <key>name</key>
-        <string>entity.name.function.coffee</string>
+        <string>entity.name.function.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>[=-]&gt;</string>
         <key>name</key>
-        <string>storage.type.function.coffee</string>
+        <string>storage.type.function.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -761,7 +761,7 @@ null
 (?!\s*[:=][^=])
 \b</string>
         <key>name</key>
-        <string>constant.language.null.coffee</string>
+        <string>constant.language.null.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -772,13 +772,13 @@ null
 (?!\s*[:=][^=])
 \b</string>
         <key>name</key>
-        <string>variable.language.coffee</string>
+        <string>variable.language.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\b(?&lt;!\.)this(?!\s*[:=])\b</string>
         <key>name</key>
-        <string>variable.language.this.coffee</string>
+        <string>variable.language.this.caffeine</string>
       </dict>
       <dict>
         <key>captures</key>
@@ -786,17 +786,17 @@ null
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>storage.type.class.coffee</string>
+            <string>storage.type.class.caffeine</string>
           </dict>
           <key>2</key>
           <dict>
             <key>name</key>
-            <string>keyword.control.inheritance.coffee</string>
+            <string>keyword.control.inheritance.caffeine</string>
           </dict>
           <key>3</key>
           <dict>
             <key>name</key>
-            <string>entity.other.inherited-class.coffee</string>
+            <string>entity.other.inherited-class.caffeine</string>
           </dict>
         </dict>
         <key>match</key>
@@ -808,7 +808,7 @@ null
   (@?[a-zA-Z\$\._][\w\.]*)
 )</string>
         <key>name</key>
-        <string>meta.class.coffee</string>
+        <string>meta.class.caffeine</string>
       </dict>
       <dict>
         <key>captures</key>
@@ -816,22 +816,22 @@ null
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>storage.type.class.coffee</string>
+            <string>storage.type.class.caffeine</string>
           </dict>
           <key>2</key>
           <dict>
             <key>name</key>
-            <string>entity.name.type.class.coffee</string>
+            <string>entity.name.type.class.caffeine</string>
           </dict>
           <key>3</key>
           <dict>
             <key>name</key>
-            <string>keyword.control.inheritance.coffee</string>
+            <string>keyword.control.inheritance.caffeine</string>
           </dict>
           <key>4</key>
           <dict>
             <key>name</key>
-            <string>entity.other.inherited-class.coffee</string>
+            <string>entity.other.inherited-class.caffeine</string>
           </dict>
         </dict>
         <key>match</key>
@@ -845,13 +845,13 @@ null
   (@?[a-zA-Z\$\._][\w\.]*)
 )?</string>
         <key>name</key>
-        <string>meta.class.coffee</string>
+        <string>meta.class.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\b(debugger|\\)\b</string>
         <key>name</key>
-        <string>keyword.other.coffee</string>
+        <string>keyword.other.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -879,19 +879,19 @@ null
   | XMLHttpRequest
 )\b</string>
         <key>name</key>
-        <string>support.class.coffee</string>
+        <string>support.class.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\b(console)\b</string>
         <key>name</key>
-        <string>entity.name.type.object.coffee</string>
+        <string>entity.name.type.object.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>((?&lt;=console\.)(debug|warn|info|log|error|time|timeEnd|assert))\b</string>
         <key>name</key>
-        <string>support.function.console.coffee</string>
+        <string>support.function.console.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -904,7 +904,7 @@ null
   | require
 )\b</string>
         <key>name</key>
-        <string>support.function.coffee</string>
+        <string>support.function.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -942,13 +942,13 @@ null
   )
 )\b</string>
         <key>name</key>
-        <string>support.function.method.array.coffee</string>
+        <string>support.function.method.array.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>((?&lt;=Array\.)(isArray))\b</string>
         <key>name</key>
-        <string>support.function.static.array.coffee</string>
+        <string>support.function.static.array.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -970,7 +970,7 @@ null
   )
 )\b</string>
         <key>name</key>
-        <string>support.function.static.object.coffee</string>
+        <string>support.function.static.object.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -1012,7 +1012,7 @@ null
   )
 )\b</string>
         <key>name</key>
-        <string>support.function.static.math.coffee</string>
+        <string>support.function.static.math.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
@@ -1025,49 +1025,49 @@ null
   )
 )\b</string>
         <key>name</key>
-        <string>support.function.static.number.coffee</string>
+        <string>support.function.static.number.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\b(Infinity|NaN|undefined)\b</string>
         <key>name</key>
-        <string>constant.language.coffee</string>
+        <string>constant.language.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>;</string>
         <key>name</key>
-        <string>punctuation.terminator.statement.coffee</string>
+        <string>punctuation.terminator.statement.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>,</string>
         <key>name</key>
-        <string>meta.delimiter.object.comma.coffee</string>
+        <string>meta.delimiter.object.comma.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>.</string>
         <key>name</key>
-        <string>meta.delimiter.method.period.coffee</string>
+        <string>meta.delimiter.method.period.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\{|\}</string>
         <key>name</key>
-        <string>meta.brace.curly.coffee</string>
+        <string>meta.brace.curly.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\(|\)</string>
         <key>name</key>
-        <string>meta.brace.round.coffee</string>
+        <string>meta.brace.round.caffeine</string>
       </dict>
       <dict>
         <key>match</key>
         <string>\[|\]\s*</string>
         <key>name</key>
-        <string>meta.brace.square.coffee</string>
+        <string>meta.brace.square.caffeine</string>
       </dict>
       <dict>
         <key>include</key>
@@ -1100,7 +1100,7 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.begin.coffee</string>
+                <string>punctuation.definition.string.begin.caffeine</string>
               </dict>
             </dict>
             <key>end</key>
@@ -1110,11 +1110,11 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.end.coffee</string>
+                <string>punctuation.definition.string.end.caffeine</string>
               </dict>
             </dict>
             <key>name</key>
-            <string>string.quoted.double.coffee</string>
+            <string>string.quoted.double.caffeine</string>
             <key>patterns</key>
             <array>
               <dict>
@@ -1129,11 +1129,11 @@ null
   | .
 )</string>
                 <key>name</key>
-                <string>constant.character.escape.coffee</string>
+                <string>constant.character.escape.caffeine</string>
               </dict>
               <dict>
                 <key>include</key>
-                <string>#interpolated_coffee</string>
+                <string>#interpolated_caffeine</string>
               </dict>
             </array>
           </dict>
@@ -1149,13 +1149,13 @@ null
               <key>1</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.comment.coffee</string>
+                <string>punctuation.definition.comment.caffeine</string>
               </dict>
             </dict>
             <key>match</key>
             <string>(?&lt;!\\)(#).*$\n?</string>
             <key>name</key>
-            <string>comment.line.number-sign.coffee</string>
+            <string>comment.line.number-sign.caffeine</string>
           </dict>
         </array>
       </dict>
@@ -1169,17 +1169,17 @@ null
               <key>1</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.variable.coffee</string>
+                <string>punctuation.definition.variable.caffeine</string>
               </dict>
             </dict>
             <key>match</key>
             <string>(@)([a-zA-Z_\$]\w*)?</string>
             <key>name</key>
-            <string>variable.other.readwrite.instance.coffee</string>
+            <string>variable.other.readwrite.instance.caffeine</string>
           </dict>
         </array>
       </dict>
-      <key>interpolated_coffee</key>
+      <key>interpolated_caffeine</key>
       <dict>
         <key>patterns</key>
         <array>
@@ -1191,11 +1191,11 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.section.embedded.begin.coffee</string>
+                <string>punctuation.section.embedded.begin.caffeine</string>
               </dict>
             </dict>
             <key>contentName</key>
-            <string>source.coffee</string>
+            <string>source.caffeine</string>
             <key>end</key>
             <string>(\})</string>
             <key>endCaptures</key>
@@ -1203,16 +1203,16 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.section.embedded.end.coffee</string>
+                <string>punctuation.section.embedded.end.caffeine</string>
               </dict>
               <key>1</key>
               <dict>
                 <key>name</key>
-                <string>source.coffee</string>
+                <string>source.caffeine</string>
               </dict>
             </dict>
             <key>name</key>
-            <string>meta.embedded.line.coffee</string>
+            <string>meta.embedded.line.caffeine</string>
             <key>patterns</key>
             <array>
               <dict>
@@ -1236,7 +1236,7 @@ null
   | ([0-9]+(\.[0-9]+)?(e[+\-]?[0-9]+)?)
 )\b</string>
             <key>name</key>
-            <string>constant.numeric.coffee</string>
+            <string>constant.numeric.caffeine</string>
           </dict>
         </array>
       </dict>
@@ -1252,7 +1252,7 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.begin.coffee</string>
+                <string>punctuation.definition.string.begin.caffeine</string>
               </dict>
             </dict>
             <key>end</key>
@@ -1262,11 +1262,11 @@ null
               <key>0</key>
               <dict>
                 <key>name</key>
-                <string>punctuation.definition.string.end.coffee</string>
+                <string>punctuation.definition.string.end.caffeine</string>
               </dict>
             </dict>
             <key>name</key>
-            <string>string.quoted.single.coffee</string>
+            <string>string.quoted.single.caffeine</string>
             <key>patterns</key>
             <array>
               <dict>
@@ -1281,7 +1281,7 @@ null
   | .
 )</string>
                 <key>name</key>
-                <string>constant.character.escape.coffee</string>
+                <string>constant.character.escape.caffeine</string>
               </dict>
             </array>
           </dict>
@@ -1295,14 +1295,14 @@ null
             <key>match</key>
             <string>([a-zA-Z\$_]\w*(\.\w+)*)</string>
             <key>name</key>
-            <string>variable.other.assignment.coffee</string>
+            <string>variable.other.assignment.caffeine</string>
           </dict>
         </array>
       </dict>
     </dict>
     <key>scopeName</key>
-    <string>source.coffee</string>
+    <string>source.caffeine</string>
     <key>uuid</key>
-    <string>5B520980-A7D5-4E10-8582-1A4C889A8DE5</string>
+    <string>62083bf8-bc2f-46ed-847a-86fd9639c25b</string>
   </dict>
 </plist>

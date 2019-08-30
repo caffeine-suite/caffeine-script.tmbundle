@@ -1,10 +1,10 @@
 comment:   :CaffeineScript
 fileTypes: [] :caf, :caffeine
 injections:
-  string.regexp.block.coffee:
+  string.regexp.block.caffeine:
     patterns:
       []
-        {} include: :#interpolated_coffee
+        {} include: :#interpolated_caffeine
         {} include: :#embedded_comment
 
 keyEquivalent: :^~C
@@ -13,20 +13,20 @@ patterns:
   []
     {}
       captures:
-        1: name: :punctuation.definition.parameters.begin.coffee
+        1: name: :punctuation.definition.parameters.begin.caffeine
         2:
           patterns:
             []
               {}
                 captures:
-                  1: name: :variable.parameter.function.coffee
-                  2: name: :punctuation.separator.key-value.coffee
-                  3: name: :string.quoted.double.coffee
-                  4: name: :punctuation.definition.string.begin.coffee
-                  5: name: :punctuation.definition.string.end.coffee
-                  6: name: :string.quoted.single.coffee
-                  7: name: :punctuation.definition.string.begin.coffee
-                  8: name: :punctuation.definition.string.end.coffee
+                  1: name: :variable.parameter.function.caffeine
+                  2: name: :punctuation.separator.key-value.caffeine
+                  3: name: :string.quoted.double.caffeine
+                  4: name: :punctuation.definition.string.begin.caffeine
+                  5: name: :punctuation.definition.string.end.caffeine
+                  6: name: :string.quoted.single.caffeine
+                  7: name: :punctuation.definition.string.begin.caffeine
+                  8: name: :punctuation.definition.string.end.caffeine
 
                 match:
                   """
@@ -38,96 +38,96 @@ patterns:
                       | ((')[^']*('))
                     )
 
-              {} match: "[^()\\s,]+", name: :variable.parameter.function.coffee
-              {} match: ",",          name: :punctuation.separator.arguments.coffee
+              {} match: "[^()\\s,]+", name: :variable.parameter.function.caffeine
+              {} match: ",",          name: :punctuation.separator.arguments.caffeine
 
-        3: name: :punctuation.definition.parameters.begin.coffee
-        4: name: :storage.type.function.coffee
+        3: name: :punctuation.definition.parameters.begin.caffeine
+        4: name: :storage.type.function.caffeine
 
       comment: "match stuff like: a -> … "
       match:   "(\\()([^()]*?)(\\))\\s*([=-]>)"
-      name:    :meta.inline.function.coffee
+      name:    :meta.inline.function.caffeine
 
     {}
       captures:
-        1: name: :keyword.operator.new.coffee
-        4: name: :storage.type.class.coffee
-        6: name: :entity.name.type.instance.coffee
-        7: name: :entity.name.type.instance.coffee
+        1: name: :keyword.operator.new.caffeine
+        4: name: :storage.type.class.caffeine
+        6: name: :entity.name.type.instance.caffeine
+        7: name: :entity.name.type.instance.caffeine
 
       match: "(new)\\s+(((class)(\\s+(\\w+(?:\\.\\w*)*))?)|(\\w+(?:\\.\\w*)*))"
       name:  :meta.class.instance.constructor
 
     {}
       begin:         "'''"
-      beginCaptures: 0: name: :punctuation.definition.string.begin.coffee
+      beginCaptures: 0: name: :punctuation.definition.string.begin.caffeine
       end:           "'''"
-      endCaptures:   0: name: :punctuation.definition.string.end.coffee
-      name:          :string.unquoted.heredoc.coffee
+      endCaptures:   0: name: :punctuation.definition.string.end.caffeine
+      name:          :string.unquoted.heredoc.caffeine
 
     {}
       begin:         '"""'
-      beginCaptures: 0: name: :punctuation.definition.string.begin.coffee
+      beginCaptures: 0: name: :punctuation.definition.string.begin.caffeine
       end:           '"""'
-      endCaptures:   0: name: :punctuation.definition.string.end.coffee
-      name:          :string.quoted.double.heredoc.coffee
+      endCaptures:   0: name: :punctuation.definition.string.end.caffeine
+      name:          :string.quoted.double.heredoc.caffeine
       patterns:
         []
           {}
             match: :\\.
-            name:  :constant.character.escape.coffee
+            name:  :constant.character.escape.caffeine
 
-          {} include: :#interpolated_coffee
+          {} include: :#interpolated_caffeine
 
     {}
       begin: "(?=`)"
       end:   "(?<=`)"
-      name:  :meta.embedded.line.coffee
+      name:  :meta.embedded.line.caffeine
       patterns:
         []
           begin:         :`
-          beginCaptures: 0: name: :punctuation.definition.string.begin.coffee
+          beginCaptures: 0: name: :punctuation.definition.string.begin.caffeine
           contentName:   :source.js
           end:           "(`)"
           endCaptures:
-            0: name: :punctuation.definition.string.end.coffee
+            0: name: :punctuation.definition.string.end.caffeine
             1: name: :source.js
 
-          name:     :string.other.embedded.javascript.coffee
+          name:     :string.other.embedded.javascript.caffeine
           patterns: [] include: :source.js
 
     {}
       begin:    "(?<!#)###(?!#)"
-      captures: 0:        name:                     :punctuation.definition.comment.coffee
+      captures: 0:        name:                     :punctuation.definition.comment.caffeine
       end:      "###(?:[ \  ]*\\n)"
-      name:     :comment.block.coffee
-      patterns: [] match: "(?<=^|\\s)@\\w*(?=\\s)", name: :storage.type.annotation.coffeescript
+      name:     :comment.block.caffeine
+      patterns: [] match: "(?<=^|\\s)@\\w*(?=\\s)", name: :storage.type.annotation.caffeinescript
 
     {}
       begin:         "(^[ \  ]+)?(?=#)"
-      beginCaptures: 1: name: :punctuation.whitespace.comment.leading.coffee
+      beginCaptures: 1: name: :punctuation.whitespace.comment.leading.caffeine
       end:           "(?!\\G)"
       patterns:
         []
           begin:         :#
-          beginCaptures: 0: name: :punctuation.definition.comment.coffee
+          beginCaptures: 0: name: :punctuation.definition.comment.caffeine
           end:           :\n
-          name:          :comment.line.number-sign.coffee
+          name:          :comment.line.number-sign.caffeine
 
     {}
       begin:         "/{3}"
-      beginCaptures: 0:          name: :punctuation.definition.string.begin.coffee
+      beginCaptures: 0:          name: :punctuation.definition.string.begin.caffeine
       end:           "(/{3})[imgy]{0,4}"
-      endCaptures:   1:          name: :punctuation.definition.string.end.coffee
-      name:          :string.regexp.block.coffee
+      endCaptures:   1:          name: :punctuation.definition.string.end.caffeine
+      name:          :string.regexp.block.caffeine
       patterns:      [] include: :source.js.regexp
 
     {}
       begin:         "/(?![\\s=/*+{}?])"
-      beginCaptures: 0:          name: :punctuation.definition.string.begin.coffee
+      beginCaptures: 0:          name: :punctuation.definition.string.begin.caffeine
       end:           "(/)[igmy]{0,4}(?![a-zA-Z0-9])"
-      endCaptures:   1:          name: :punctuation.definition.string.end.coffee
-      name:          :string.regexp.coffee
+      endCaptures:   1:          name: :punctuation.definition.string.end.caffeine
+      name:          :string.regexp.caffeine
       patterns:      [] include: :source.js.regexp
 
     {}
@@ -164,7 +164,7 @@ patterns:
           \\b
 
 
-      name: :keyword.control.coffee
+      name: :keyword.control.caffeine
 
     {}
       match:
@@ -183,7 +183,7 @@ patterns:
                           | \\b(?<![\\.\\$])(instanceof|new|delete|typeof|and|or|is|isnt|not|super)(?!\\s*:)\\b
 
 
-      name: :keyword.operator.coffee
+      name: :keyword.operator.caffeine
 
     {}
       match:
@@ -222,13 +222,13 @@ patterns:
           \\b
 
 
-      name: :keyword.other.reserved.coffee
+      name: :keyword.other.reserved.caffeine
 
     {}
       captures:
-        1: name: :variable.other.assignment.coffee
+        1: name: :variable.other.assignment.caffeine
         4: name: :punctuation.separator.key-value
-        5: name: :keyword.operator.coffee
+        5: name: :keyword.operator.caffeine
 
       match:
         """
@@ -249,10 +249,10 @@ patterns:
 
     {}
       begin:         "(?<=\\s|^)(\\{)(?=.+?\\}\\s+[:=])"
-      beginCaptures: 0: name: :keyword.operator.coffee
+      beginCaptures: 0: name: :keyword.operator.caffeine
       end:           "(\\}\\s*[:=])"
-      endCaptures:   0: name: :keyword.operator.coffee
-      name:          :meta.variable.assignment.destructured.object.coffee
+      endCaptures:   0: name: :keyword.operator.caffeine
+      name:          :meta.variable.assignment.destructured.object.caffeine
       patterns:
         []
           {} include: :#variable_name
@@ -263,10 +263,10 @@ patterns:
 
     {}
       begin:         "(?<=\\s|^)(\\[)(?=.+?\\]\\s+[:=])"
-      beginCaptures: 0: name: :keyword.operator.coffee
+      beginCaptures: 0: name: :keyword.operator.caffeine
       end:           "(\\]\\s*[:=])"
-      endCaptures:   0: name: :keyword.operator.coffee
-      name:          :meta.variable.assignment.destructured.array.coffee
+      endCaptures:   0: name: :keyword.operator.caffeine
+      name:          :meta.variable.assignment.destructured.array.caffeine
       patterns:
         []
           {} include: :#variable_name
@@ -277,21 +277,21 @@ patterns:
 
     {}
       captures:
-        1: name: :entity.name.function.coffee
-        4: name: :punctuation.definition.parameters.begin.coffee
+        1: name: :entity.name.function.caffeine
+        4: name: :punctuation.definition.parameters.begin.caffeine
         5:
           patterns:
             []
               {}
                 captures:
-                  1: name: :variable.parameter.function.coffee
-                  2: name: :punctuation.separator.key-value.coffee
-                  3: name: :string.quoted.double.coffee
-                  4: name: :punctuation.definition.string.begin.coffee
-                  5: name: :punctuation.definition.string.end.coffee
-                  6: name: :string.quoted.single.coffee
-                  7: name: :punctuation.definition.string.begin.coffee
-                  8: name: :punctuation.definition.string.end.coffee
+                  1: name: :variable.parameter.function.caffeine
+                  2: name: :punctuation.separator.key-value.caffeine
+                  3: name: :string.quoted.double.caffeine
+                  4: name: :punctuation.definition.string.begin.caffeine
+                  5: name: :punctuation.definition.string.end.caffeine
+                  6: name: :string.quoted.single.caffeine
+                  7: name: :punctuation.definition.string.begin.caffeine
+                  8: name: :punctuation.definition.string.end.caffeine
 
                 match:
                   """
@@ -303,11 +303,11 @@ patterns:
                       | ((')[^']*('))
                     )
 
-              {} match: "[^()\\s,]+", name: :variable.parameter.function.coffee
-              {} match: ",",          name: :punctuation.separator.arguments.coffee
+              {} match: "[^()\\s,]+", name: :variable.parameter.function.caffeine
+              {} match: ",",          name: :punctuation.separator.arguments.caffeine
 
-        6: name: :punctuation.definition.parameters.begin.coffee
-        7: name: :storage.type.function.coffee
+        6: name: :punctuation.definition.parameters.begin.caffeine
+        7: name: :storage.type.function.caffeine
 
       match:
         """
@@ -326,7 +326,7 @@ patterns:
           )
 
 
-      name: :meta.function.coffee
+      name: :meta.function.caffeine
 
     {}
       match:
@@ -338,7 +338,7 @@ patterns:
           (?!\\s*[:=][^=])
           \\b
 
-      name: :constant.language.boolean.true.coffee
+      name: :constant.language.boolean.true.caffeine
 
     {}
       match:
@@ -350,15 +350,15 @@ patterns:
           (?!\\s*[:=][^=])
           \\b
 
-      name: :constant.language.boolean.false.coffee
+      name: :constant.language.boolean.false.caffeine
 
     {}
       match:
         '@?\\b(?!class|subclass|extends|decodeURI(Component)?|encodeURI(Component)?|eval|parse(Float|Int)|require)\\w+(?=\\s+(?!(of|in|then|is|isnt|and|or|for|else|when|not|if)\\s)(?=(@?\\w+|\\->|\\-\\d|\\[|\\{|"|\'))|(?=\\())'
 
-      name: :entity.name.function.coffee
+      name: :entity.name.function.caffeine
 
-    {} match: "[=-]>", name: :storage.type.function.coffee
+    {} match: "[=-]>", name: :storage.type.function.caffeine
     {}
       match:
         """
@@ -369,7 +369,7 @@ patterns:
           (?!\\s*[:=][^=])
           \\b
 
-      name: :constant.language.null.coffee
+      name: :constant.language.null.caffeine
 
     {}
       match:
@@ -381,14 +381,14 @@ patterns:
           (?!\\s*[:=][^=])
           \\b
 
-      name: :variable.language.coffee
+      name: :variable.language.caffeine
 
-    {} match: "\\b(?<!\\.)this(?!\\s*[:=])\\b", name: :variable.language.this.coffee
+    {} match: "\\b(?<!\\.)this(?!\\s*[:=])\\b", name: :variable.language.this.caffeine
     {}
       captures:
-        1: name: :storage.type.class.coffee
-        2: name: :keyword.control.inheritance.coffee
-        3: name: :entity.other.inherited-class.coffee
+        1: name: :storage.type.class.caffeine
+        2: name: :keyword.control.inheritance.caffeine
+        3: name: :entity.other.inherited-class.caffeine
 
       match:
         """
@@ -400,14 +400,14 @@ patterns:
             (@?[a-zA-Z\\$\\._][\\w\\.]*)
           )
 
-      name: :meta.class.coffee
+      name: :meta.class.caffeine
 
     {}
       captures:
-        1: name: :storage.type.class.coffee
-        2: name: :entity.name.type.class.coffee
-        3: name: :keyword.control.inheritance.coffee
-        4: name: :entity.other.inherited-class.coffee
+        1: name: :storage.type.class.caffeine
+        2: name: :entity.name.type.class.caffeine
+        3: name: :keyword.control.inheritance.caffeine
+        4: name: :entity.other.inherited-class.caffeine
 
       match:
         """
@@ -421,9 +421,9 @@ patterns:
             (@?[a-zA-Z\\$\\._][\\w\\.]*)
           )?
 
-      name: :meta.class.coffee
+      name: :meta.class.caffeine
 
-    {} match: "\\b(debugger|\\\\)\\b", name: :keyword.other.coffee
+    {} match: "\\b(debugger|\\\\)\\b", name: :keyword.other.caffeine
     {}
       match:
         """
@@ -451,10 +451,10 @@ patterns:
             | XMLHttpRequest
           )\\b
 
-      name: :support.class.coffee
+      name: :support.class.caffeine
 
-    {} match: "\\b(console)\\b", name: :entity.name.type.object.coffee
-    {} match: "((?<=console\\.)(debug|warn|info|log|error|time|timeEnd|assert))\\b",name: :support.function.console.coffee
+    {} match: "\\b(console)\\b", name: :entity.name.type.object.caffeine
+    {} match: "((?<=console\\.)(debug|warn|info|log|error|time|timeEnd|assert))\\b",name: :support.function.console.caffeine
     {}
       match:
         """
@@ -467,7 +467,7 @@ patterns:
             | require
           )\\b
 
-      name: :support.function.coffee
+      name: :support.function.caffeine
 
     {}
       match:
@@ -506,9 +506,9 @@ patterns:
             )
           )\\b
 
-      name: :support.function.method.array.coffee
+      name: :support.function.method.array.caffeine
 
-    {} match: "((?<=Array\\.)(isArray))\\b", name: :support.function.static.array.coffee
+    {} match: "((?<=Array\\.)(isArray))\\b", name: :support.function.static.array.caffeine
     {}
       match:
         """
@@ -530,7 +530,7 @@ patterns:
             )
           )\\b
 
-      name: :support.function.static.object.coffee
+      name: :support.function.static.object.caffeine
 
     {}
       match:
@@ -573,7 +573,7 @@ patterns:
             )
           )\\b
 
-      name: :support.function.static.math.coffee
+      name: :support.function.static.math.caffeine
 
     {}
       match:
@@ -587,21 +587,21 @@ patterns:
             )
           )\\b
 
-      name: :support.function.static.number.coffee
+      name: :support.function.static.number.caffeine
 
-    {} match: "\\b(Infinity|NaN|undefined)\\b", name: :constant.language.coffee
+    {} match: "\\b(Infinity|NaN|undefined)\\b", name: :constant.language.caffeine
     {}
       match: :\;
-      name:  :punctuation.terminator.statement.coffee
+      name:  :punctuation.terminator.statement.caffeine
 
-    {} match: ",", name: :meta.delimiter.object.comma.coffee
+    {} match: ",", name: :meta.delimiter.object.comma.caffeine
     {}
       match: :\.
-      name:  :meta.delimiter.method.period.coffee
+      name:  :meta.delimiter.method.period.caffeine
 
-    {} match:   "\\{|\\}",     name: :meta.brace.curly.coffee
-    {} match:   "\\(|\\)",     name: :meta.brace.round.coffee
-    {} match:   "\\[|\\]\\s*", name: :meta.brace.square.coffee
+    {} match:   "\\{|\\}",     name: :meta.brace.curly.caffeine
+    {} match:   "\\(|\\)",     name: :meta.brace.round.caffeine
+    {} match:   "\\[|\\]\\s*", name: :meta.brace.square.caffeine
     {} include: :#instance_variable
     {} include: :#single_quoted_string
     {} include: :#double_quoted_string
@@ -612,10 +612,10 @@ repository:
     patterns:
       []
         begin:         '"'
-        beginCaptures: 0: name: :punctuation.definition.string.begin.coffee
+        beginCaptures: 0: name: :punctuation.definition.string.begin.caffeine
         end:           '"'
-        endCaptures:   0: name: :punctuation.definition.string.end.coffee
-        name:          :string.quoted.double.coffee
+        endCaptures:   0: name: :punctuation.definition.string.end.caffeine
+        name:          :string.quoted.double.caffeine
         patterns:
           []
             {}
@@ -631,36 +631,36 @@ repository:
                     | .
                   )
 
-              name: :constant.character.escape.coffee
+              name: :constant.character.escape.caffeine
 
-            {} include: :#interpolated_coffee
+            {} include: :#interpolated_caffeine
 
   embedded_comment:
     patterns:
       []
-        captures: 1: name: :punctuation.definition.comment.coffee
+        captures: 1: name: :punctuation.definition.comment.caffeine
         match:    "(?<!\\\\)(#).*$\\n?"
-        name:     :comment.line.number-sign.coffee
+        name:     :comment.line.number-sign.caffeine
 
   instance_variable:
     patterns:
       []
-        captures: 1: name: :punctuation.definition.variable.coffee
+        captures: 1: name: :punctuation.definition.variable.caffeine
         match:    "(@)([a-zA-Z_\\$]\\w*)?"
-        name:     :variable.other.readwrite.instance.coffee
+        name:     :variable.other.readwrite.instance.caffeine
 
-  interpolated_coffee:
+  interpolated_caffeine:
     patterns:
       []
         begin:         :#\{
-        beginCaptures: 0: name: :punctuation.section.embedded.begin.coffee
-        contentName:   :source.coffee
+        beginCaptures: 0: name: :punctuation.section.embedded.begin.caffeine
+        contentName:   :source.caffeine
         end:           "(\\})"
         endCaptures:
-          0: name: :punctuation.section.embedded.end.coffee
-          1: name: :source.coffee
+          0: name: :punctuation.section.embedded.end.caffeine
+          1: name: :source.caffeine
 
-        name:     :meta.embedded.line.coffee
+        name:     :meta.embedded.line.caffeine
         patterns: [] include: :$self
 
   numeric:
@@ -675,16 +675,16 @@ repository:
               | ([0-9]+(\\.[0-9]+)?(e[+\\-]?[0-9]+)?)
             )\\b
 
-        name: :constant.numeric.coffee
+        name: :constant.numeric.caffeine
 
   single_quoted_string:
     patterns:
       []
         begin:         "'"
-        beginCaptures: 0: name: :punctuation.definition.string.begin.coffee
+        beginCaptures: 0: name: :punctuation.definition.string.begin.caffeine
         end:           "'"
-        endCaptures:   0: name: :punctuation.definition.string.end.coffee
-        name:          :string.quoted.single.coffee
+        endCaptures:   0: name: :punctuation.definition.string.end.caffeine
+        name:          :string.quoted.single.caffeine
         patterns:
           []
             match:
@@ -699,9 +699,9 @@ repository:
                   | .
                 )
 
-            name: :constant.character.escape.coffee
+            name: :constant.character.escape.caffeine
 
-  variable_name: patterns: [] match: "([a-zA-Z\\$_]\\w*(\\.\\w+)*)", name: :variable.other.assignment.coffee
+  variable_name: patterns: [] match: "([a-zA-Z\\$_]\\w*(\\.\\w+)*)", name: :variable.other.assignment.caffeine
 
-scopeName: :source.coffee
-uuid:      :5B520980-A7D5-4E10-8582-1A4C889A8DE5
+scopeName: :source.caffeine
+uuid:      :62083bf8-bc2f-46ed-847a-86fd9639c25b
