@@ -1,17 +1,19 @@
-comment:   :CaffeineScript
-fileTypes: [] :caf, :caffeine
-injections:
-  string.regexp.block.caffeine:
-    patterns:
-      []
-        {} include: :#interpolated_caffeine
-        {} include: :#embedded_comment
+##
+  Reference:
+  https://macromates.com/manual/en/language_grammars#language_grammars
 
-keyEquivalent: :^~C
-name:          :CaffeineScript
+name:           :CaffeineScript
+comment:        :CaffeineScript
+fileTypes:      :caf :caffeine
+scopeName:      :source.caffeine
+uuid:           :62083bf8-bc2f-46ed-847a-86fd9639c25b
+
+firstLineMatch: "" ^#!/.*\bcaf\b
+
 patterns:
   []
     {}
+      comment:  "" match stuff like: a -> …
       captures:
         1: name: :punctuation.definition.parameters.begin.caffeine
         2:
@@ -44,18 +46,17 @@ patterns:
         3: name: :punctuation.definition.parameters.begin.caffeine
         4: name: :storage.type.function.caffeine
 
-      comment: "match stuff like: a -> … "
       match:   "(\\()([^()]*?)(\\))\\s*([=-]>)"
       name:    :meta.inline.function.caffeine
 
     {}
+      match: "" (new)\\s+(((class)(\\s+(\\w+(?:\\.\\w*)*))?)|(\\w+(?:\\.\\w*)*))
       captures:
         1: name: :keyword.operator.new.caffeine
         4: name: :storage.type.class.caffeine
         6: name: :entity.name.type.instance.caffeine
         7: name: :entity.name.type.instance.caffeine
 
-      match: "(new)\\s+(((class)(\\s+(\\w+(?:\\.\\w*)*))?)|(\\w+(?:\\.\\w*)*))"
       name:  :meta.class.instance.constructor
 
     {}
@@ -74,7 +75,7 @@ patterns:
       patterns:
         []
           {}
-            match: :\\.
+            match: "" \\.
             name:  :constant.character.escape.caffeine
 
           {} include: :#interpolated_caffeine
@@ -111,7 +112,7 @@ patterns:
         []
           begin:         :#
           beginCaptures: 0: name: :punctuation.definition.comment.caffeine
-          end:           :\n
+          end:           "" \n
           name:          :comment.line.number-sign.caffeine
 
     {}
@@ -137,28 +138,42 @@ patterns:
           \\b
           (?<![\\.\\$])
           (
-            break
+            ((in|from)-)?(array|object)
+            | as
+            | await
+            | break
             | by
+            | case
             | catch
-            | continue
+            | class
+            | do
+            | each
             | else
-            | finally
-            | for
-            | in
-            | of
+            | extends
+            | extract
+            | find
+            | from
             | if
+            | import
+            | in
+            | inject
+            | into
+            | reduce
             | return
+            | returning
             | switch
             | then
             | throw
+            | til
+            | to
             | try
             | unless
+            | until
             | when
             | while
-            | until
-            | loop
-            | do
-            | (?<=for)\\s+own
+            | with
+            | with-key
+            )
           )
           (?!\\s*:)
           \\b
@@ -170,17 +185,17 @@ patterns:
       match:
         """
           (?x)
-                            (and|or|<<|>>>?|(?<!\\()\\/|[=!<>*%+\\-&^])?=(?!>)
-                          | [!%^*\\/~?:]
-                          | \\-?\\-(?!>)
-                          | \\+\\+?
-                          | <>
-                          | <
-                          | >
-                          | &&?
-                          | \\.\\.\\.?
-                          | \\|\\|?
-                          | \\b(?<![\\.\\$])(instanceof|new|delete|typeof|and|or|is|isnt|not|super)(?!\\s*:)\\b
+          (and|or|<<|>>>?|(?<!\\()\\/|[=!<>*%+\\-&^])?=(?!>)
+          | [!%^*\\/~?:]
+          | \\-?\\-(?!>)
+          | \\+\\+?
+          | <>
+          | <
+          | >
+          | &&?
+          | \\.\\.\\.?
+          | \\|\\|?
+          | \\b(?<![\\.\\$])(instanceof|new|delete|typeof|and|or|is|isnt|not|super)(?!\\s*:)\\b
 
 
       name: :keyword.operator.caffeine
@@ -591,12 +606,12 @@ patterns:
 
     {} match: "\\b(Infinity|NaN|undefined)\\b", name: :constant.language.caffeine
     {}
-      match: :\;
+      match: "\\;"
       name:  :punctuation.terminator.statement.caffeine
 
     {} match: ",", name: :meta.delimiter.object.comma.caffeine
     {}
-      match: :\.
+      match: "\\."
       name:  :meta.delimiter.method.period.caffeine
 
     {} match:   "\\{|\\}",     name: :meta.brace.curly.caffeine
@@ -617,23 +632,22 @@ repository:
         endCaptures:   0: name: :punctuation.definition.string.end.caffeine
         name:          :string.quoted.double.caffeine
         patterns:
-          []
-            {}
-              match:
-                """
-                  (?x)
-                  \\\\(
-                    x\\h{2}
-                    | [0-2][0-7]{0,2}
-                    | 3[0-6][0-7]
-                    | 37[0-7]?
-                    | [4-7][0-7]?
-                    | .
-                  )
+          {}
+            match:
+              """
+                (?x)
+                \\\\(
+                  x\\h{2}
+                  | [0-2][0-7]{0,2}
+                  | 3[0-6][0-7]
+                  | 37[0-7]?
+                  | [4-7][0-7]?
+                  | .
+                )
 
-              name: :constant.character.escape.caffeine
+            name: :constant.character.escape.caffeine
 
-            {} include: :#interpolated_caffeine
+          {} include: :#interpolated_caffeine
 
   embedded_comment:
     patterns:
@@ -702,6 +716,3 @@ repository:
             name: :constant.character.escape.caffeine
 
   variable_name: patterns: [] match: "([a-zA-Z\\$_]\\w*(\\.\\w+)*)", name: :variable.other.assignment.caffeine
-
-scopeName: :source.caffeine
-uuid:      :62083bf8-bc2f-46ed-847a-86fd9639c25b
